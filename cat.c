@@ -40,11 +40,13 @@ int main (int argc, char* argv[])
     }
 
     // read input file
-    char read_buffer[buffer_size];
+    char* read_buffer = malloc(buffer_size + 1);
     ssize_t bytes_read = read(fd, read_buffer, buffer_size);
+    read_buffer[bytes_read] = '\0';
 
     if (bytes_read == -1) {
         perror("Error reading from file");
+        free(read_buffer);
         close(fd);
         return -1;
     }
@@ -54,8 +56,10 @@ int main (int argc, char* argv[])
     // close input file
     if (close(fd) == -1) {
         perror("Error closing file");
+        free(read_buffer);
         return -1;
     }
 
+    free(read_buffer);
     return 0;
 }
