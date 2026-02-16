@@ -17,3 +17,6 @@ add_executable(my-cp cp.c)
 
 # Build mkdir utility
 add_executable(my-mkdir mkdir.c)
+
+# Build ls utility
+add_executable(my-ls ls.c)
