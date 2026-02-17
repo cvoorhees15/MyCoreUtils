@@ -7,6 +7,7 @@ An attempt at rewriting some of the basic UNIX core utils to practice using syst
 - **my-cat**: Concatenate and display file contents.
 - **my-cp**: Copy files from source to destination.
 - **my-mkdir**: Create directories.
+- **my-ls**: List directories.
 
 ## Requirements
 
@@ -29,10 +30,11 @@ An attempt at rewriting some of the basic UNIX core utils to practice using syst
    ```
    make
    ```
-5. The executables (`my-cat`, `my-cp`, `my-mkdir`) will be located in the `bin/` directory.
+5. The executables (`my-cat`, `my-cp`, `my-mkdir`, `my-ls`) will be located in the `bin/` directory.
 
 ## Usage
 
 - `my-cat <file>`: Display the contents of `<file>`.
 - `my-cp <source> <destination>`: Copy `<source>` to `<destination>`.
 - `my-mkdir <directory>`: Create the directory `<directory>`.
+- `my-ls <directory>`: List directories within `directory`.
