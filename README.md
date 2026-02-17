@@ -1,6 +1,6 @@
 # MyCoreUtils
 
-An attempt at rewriting some of the basic UNIX core utils to practice using system calls.
+An attempt at rewriting some of the basic UNIX core utils to learn different system calls.
 
 ## Details
 
